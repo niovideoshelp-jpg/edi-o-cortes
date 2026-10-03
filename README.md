@@ -1,10 +1,10 @@
-# HardScope — três cortes em Remotion
+# HardScope — três cortes em Remotion (V2)
 
-Projeto editável com três vídeos independentes em 1080 × 1920, 30 fps, MP4 H.264/AAC. Legendas em inglês, brancas com contorno escuro e destaque amarelo sincronizado. A posição muda em cenas específicas para preservar rostos e cartas.
+Projeto editável com três vídeos independentes em 1080 × 1920, 30 fps, MP4 H.264/AAC. Legendas em inglês, brancas com contorno escuro e destaque amarelo sincronizado. Tela dupla com enquadramentos sincronizados da mesma cena, fonte Barlow Condensed ExtraBold e animação discreta por palavra. A carta de Unpacked e a revelação final de Love & Justice ocupam a tela inteira para preservar os detalhes.
 
 | Composição     |  Duração | Trechos do trailer original                                   |
 | -------------- | -------: | ------------------------------------------------------------- |
-| R3born         | 12,733 s | 00:59,150–01:05,950; 01:08,050–01:13,983                      |
+| R3born         | 21,733 s | 00:59,150–01:05,950; 01:08,050–01:13,983; 01:17,850–01:26,850                      |
 | Unpacked       | 10,900 s | 00:05,200–00:08,700; 00:15,200–00:20,200; 00:23,100–00:25,500 |
 | LoveAndJustice | 11,300 s | 00:08,800–00:20,100                                           |
 
@@ -32,3 +32,7 @@ npm run render:all
 Os três MP4 serão gravados em `out/`. `OUTPUT_DIR` permite mudar a pasta. Sem `CHROME_PATH`, o renderizador utiliza seu navegador de renderização padrão.
 
 Textos de publicação e identificação das fontes: `delivery.txt`. A aprovação da campanha continua sujeita à revisão dos organizadores.
+
+## Fonte
+
+Barlow Condensed ExtraBold, distribuída sob SIL Open Font License. Arquivo e licença em `public/fonts/`. Origem: https://github.com/google/fonts/tree/main/ofl/barlowcondensed. A fonte é um elemento de diagramação; imagem e áudio continuam exclusivamente dos trailers.

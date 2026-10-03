@@ -2,18 +2,13 @@ import { AbsoluteFill, Composition, Sequence, useCurrentFrame } from "remotion";
 import { Footage, CenterCaptions } from "./Cut";
 import captions from "./captions.json";
 
-const R3Captions = () => {
-  const frame = useCurrentFrame();
-  return (
-    <CenterCaptions pages={captions.r3born} top={frame >= 320 ? 1370 : 1130} />
-  );
-};
+const R3Captions = () => <CenterCaptions pages={captions.r3born} />;
 const UnpackedCaptions = () => {
   const frame = useCurrentFrame();
   return (
     <CenterCaptions
       pages={captions.unpacked}
-      top={frame >= 294 ? 1560 : frame >= 126 && frame <= 180 ? 1510 : 1100}
+      full={frame >= 126 && frame <= 180}
     />
   );
 };
@@ -30,32 +25,33 @@ const R3born = () => (
         length={178}
       />
     </Sequence>
+    <Sequence name="A new technique" from={382} durationInFrames={270}>
+      <Footage file="r3born-extra.mp4" landscape length={270} />
+    </Sequence>
     <R3Captions />
   </AbsoluteFill>
 );
 const Unpacked = () => (
   <AbsoluteFill>
     <Sequence name="No way" durationInFrames={105}>
-      <Footage file="unpacked-1.mp4" length={105} />
+      <Footage kind="unpacked" file="unpacked-1.mp4" length={105} />
     </Sequence>
     <Sequence name="One card" from={105} durationInFrames={150}>
-      <Footage file="unpacked-2.mp4" length={150} />
+      <Footage kind="unpacked" file="unpacked-2.mp4" length={150} />
     </Sequence>
     <Sequence name="The reaction" from={255} durationInFrames={72}>
-      <Footage file="unpacked-3.mp4" length={72} />
+      <Footage kind="unpacked" file="unpacked-3.mp4" length={72} />
     </Sequence>
     <UnpackedCaptions />
   </AbsoluteFill>
 );
 const LoveCaptions = () => {
   const frame = useCurrentFrame();
-  return (
-    <CenterCaptions pages={captions.love} top={frame >= 210 ? 1490 : 1150} />
-  );
+  return <CenterCaptions pages={captions.love} full={frame >= 260} />;
 };
 const LoveAndJustice = () => (
   <AbsoluteFill>
-    <Footage file="love-source.mp4" />
+    <Footage kind="love" file="love-source.mp4" />
     <LoveCaptions />
   </AbsoluteFill>
 );
@@ -67,7 +63,7 @@ export const RemotionRoot = () => (
       width={1080}
       height={1920}
       fps={30}
-      durationInFrames={382}
+      durationInFrames={652}
     />
     <Composition
       id="Unpacked"
@@ -87,4 +83,3 @@ export const RemotionRoot = () => (
     />
   </>
 );
-

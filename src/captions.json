@@ -256,6 +256,206 @@
           "confidence": 0.7895
         }
       ]
+    },
+    {
+      "words": [
+        {
+          "text": "He",
+          "startMs": 12903,
+          "endMs": 13423,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": "maxed",
+          "startMs": 13423,
+          "endMs": 13943,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": "out",
+          "startMs": 13943,
+          "endMs": 14083,
+          "timestampMs": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": "all",
+          "startMs": 14083,
+          "endMs": 14363,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": "the",
+          "startMs": 14363,
+          "endMs": 14523,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": "machines",
+          "startMs": 14523,
+          "endMs": 14723,
+          "timestampMs": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": "in",
+          "startMs": 14723,
+          "endMs": 15043,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": "the",
+          "startMs": 15043,
+          "endMs": 15143,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": "gym.",
+          "startMs": 15143,
+          "endMs": 15303,
+          "timestampMs": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": "So",
+          "startMs": 16303,
+          "endMs": 16603,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": "he",
+          "startMs": 16603,
+          "endMs": 16703,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": "had",
+          "startMs": 16703,
+          "endMs": 16783,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": "to",
+          "startMs": 16783,
+          "endMs": 16883,
+          "timestampMs": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": "create",
+          "startMs": 16883,
+          "endMs": 17163,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": "new",
+          "startMs": 17163,
+          "endMs": 17603,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": "workouts.",
+          "startMs": 17603,
+          "endMs": 18263,
+          "timestampMs": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": "He",
+          "startMs": 19143,
+          "endMs": 19623,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": "invented",
+          "startMs": 19623,
+          "endMs": 19823,
+          "timestampMs": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": "a",
+          "startMs": 19823,
+          "endMs": 20063,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": "new",
+          "startMs": 20063,
+          "endMs": 20223,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": "technique",
+          "startMs": 20223,
+          "endMs": 20503,
+          "timestampMs": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": "for",
+          "startMs": 20503,
+          "endMs": 20963,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": "the",
+          "startMs": 20963,
+          "endMs": 21043,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": "sit-up.",
+          "startMs": 21043,
+          "endMs": 21383,
+          "timestampMs": null,
+          "confidence": null
+        }
+      ]
     }
   ],
   "unpacked": [
