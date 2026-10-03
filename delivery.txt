@@ -1,4 +1,4 @@
-HARDSCOPE — CORTES V2 PARA REVISÃO
+HARDSCOPE — CORTES V3 PARA REVISÃO
 
 01-r3born.mp4 — 21,733 segundos
 Fonte: N3ON_R3BORN_UPDATED.mp4
@@ -25,4 +25,9 @@ Formato de todos os vídeos: 1080 × 1920, vertical 9:16, 30 fps, H.264/AAC.
 Legendas em inglês e áudio original. Sem publicação em redes sociais ou envio para campanhas.
 Datas de estreia não foram acrescentadas, pois o briefing se referia a setembro.
 
-V2: tela dupla com detalhes sincronizados, tipografia Barlow Condensed ExtraBold, realce amarelo por palavra e alternância para tela inteira em closes. R3born ampliado com uma sequência adicional do trailer. Nenhuma imagem ou áudio externo. As primeiras versões foram preservadas em pasta separada.
+V3: tela inteira alternada com enquadramentos de participantes distintos da mesma interação. Cada painel acompanha o mesmo instante do trailer; o áudio toca uma única vez. Sem faixa preta central ou barras de progresso. Love & Justice inteiramente em tela única.
+
+Tela dupla — tempos dos trailers originais:
+R3born: 01:00,350–01:01,217 (protagonista e acompanhantes).
+Unpacked: 00:06,967–00:07,600 e 00:18,533–00:19,333 (um participante por painel).
+As durações e falas da V2 foram mantidas. V1 e V2 preservadas em pastas separadas.

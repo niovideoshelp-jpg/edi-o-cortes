@@ -6,7 +6,8 @@ import {
   useVideoConfig,
   staticFile,
 } from "remotion";
-import { Video } from "@remotion/media";
+import { Video, Audio } from "@remotion/media";
+import { getLayout, type Crop } from "./editorial";
 import { loadFont } from "@remotion/fonts";
 import type { Caption } from "@remotion/captions";
 
@@ -18,8 +19,8 @@ loadFont({
 export type CaptionPage = { words: Caption[]; top?: number };
 export const CenterCaptions: React.FC<{
   pages: CaptionPage[];
-  full?: boolean;
-}> = ({ pages, full = false }) => {
+  top: number;
+}> = ({ pages, top }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const ms = (frame / fps) * 1000;
@@ -35,14 +36,14 @@ export const CenterCaptions: React.FC<{
   if (!page) return null;
   const age = ((ms - page.words[0].startMs) / 1000) * fps;
   const count = page.words.map((w) => w.text.trim()).join(" ").length;
-  const size = count <= 12 ? 142 : count <= 20 ? 120 : count <= 28 ? 106 : 94;
+  const size = count <= 12 ? 112 : count <= 20 ? 100 : count <= 28 ? 90 : 82;
   return (
     <div
       style={{
         position: "absolute",
         left: 80,
         width: 920,
-        top: full ? 1530 : 980,
+        top,
         transform: `translateY(-50%) scale(${interpolate(age, [0, 4, 7], [0.96, 1.015, 1], { extrapolateRight: "clamp" })})`,
         textAlign: "center",
         fontFamily: "Barlow Condensed",
@@ -58,7 +59,11 @@ export const CenterCaptions: React.FC<{
       }}
     >
       {page.words.map((word, i) => {
-        const active = ms >= word.startMs && ms < word.endMs;
+        const emphasized =
+          !/^(a|an|the|is|was|he|in|to|and|of|for|it|has|this|so|had|my)$/i.test(
+            word.text.trim().replace(/[.,!?]/g, ""),
+          );
+        const active = emphasized && ms >= word.startMs && ms < word.endMs;
         const wordAge = ((ms - word.startMs) / 1000) * fps;
         return (
           <React.Fragment key={i}>
@@ -83,127 +88,68 @@ export const CenterCaptions: React.FC<{
 
 export const Footage: React.FC<{
   file: string;
-  landscape?: boolean;
   trimBefore?: number;
   length?: number;
-  kind?: "r3born" | "unpacked" | "love";
-}> = ({ file, landscape = false, trimBefore = 0, length, kind = "r3born" }) => {
+}> = ({ file, trimBefore = 0, length }) => {
   const frame = useCurrentFrame();
-  const config = useVideoConfig();
-  const durationInFrames = length ?? config.durationInFrames;
-  const sourceTime = (frame + trimBefore) / config.fps;
-  const full =
-    (file === "unpacked-2.mp4" && frame >= 21 && frame <= 75) ||
-    (kind === "love" && frame >= 260);
-  const crop =
-    file === "r3born-extra.mp4"
-      ? frame < 45
-        ? 42
-        : frame < 105
-          ? 58
-          : 60
-      : sourceTime >= 12.75
-        ? 66
-        : sourceTime >= 8.2 && sourceTime < 10.9
-          ? 62
-          : sourceTime >= 3.6 && sourceTime < 5
-            ? 65
-            : 50;
-  const upperY =
-    kind === "unpacked"
-      ? file === "unpacked-3.mp4" && frame >= 39
-        ? 48
-        : 18
-      : kind === "love"
-        ? frame >= 260
-          ? 42
-          : 28
-        : 50;
-  const motion = interpolate(frame, [0, durationInFrames - 1], [1, 1.025], {
-    extrapolateRight: "clamp",
-  });
-  const video = (muted: boolean, pos: string, scale: number) => (
-    <Video
-      name={
-        muted ? "Synchronized detail" : "Official trailer audio and picture"
-      }
-      src={staticFile(file)}
-      trimBefore={trimBefore}
-      durationInFrames={durationInFrames}
-      muted={muted}
-      objectFit="cover"
-      style={{
-        width: "100%",
-        height: "100%",
-        objectPosition: pos,
-        transform: `scale(${scale})`,
-      }}
-    />
-  );
+  const { durationInFrames: total } = useVideoConfig();
+  const durationInFrames = length ?? total;
+  const layout = getLayout(file, frame + trimBefore);
+  const landscape = file.startsWith("r3born");
+  const sourceWidth = landscape ? 1920 : 1080;
+  const sourceHeight = landscape ? 1080 : 1920;
+  const panel = (crop: Crop, top: number, height: number, label: string) => {
+    const scale = 1080 / crop.width;
+    return (
+      <div
+        style={{
+          position: "absolute",
+          top,
+          left: 0,
+          width: 1080,
+          height,
+          overflow: "hidden",
+        }}
+      >
+        <Video
+          name={label}
+          src={staticFile(file)}
+          muted
+          trimBefore={trimBefore}
+          durationInFrames={durationInFrames}
+          style={{
+            position: "absolute",
+            width: sourceWidth * scale,
+            height: sourceHeight * scale,
+            left: -crop.x * scale,
+            top: -crop.y * scale,
+          }}
+        />
+      </div>
+    );
+  };
   return (
-    <AbsoluteFill style={{ backgroundColor: "#0D0E12", overflow: "hidden" }}>
-      {full ? (
-        video(false, "50% 50%", 1)
+    <AbsoluteFill style={{ backgroundColor: "#08090B", overflow: "hidden" }}>
+      <Audio
+        name="Single original audio track"
+        src={staticFile(file)}
+        trimBefore={trimBefore}
+        durationInFrames={durationInFrames}
+      />
+      {layout.mode === "single" ? (
+        panel(layout.crop, 0, 1920, "Original scene")
       ) : (
         <>
+          {panel(layout.upper, 0, 960, "Participant A — same source frame")}
+          {panel(layout.lower, 960, 960, "Participant B — same source frame")}
           <div
             style={{
               position: "absolute",
-              inset: "0 0 auto",
-              height: 848,
-              overflow: "hidden",
-            }}
-          >
-            {video(
-              false,
-              landscape ? `${crop}% 45%` : `50% ${upperY}%`,
-              motion,
-            )}
-          </div>
-          <div
-            style={{
-              position: "absolute",
+              top: 958,
               left: 0,
               right: 0,
-              top: 1112,
-              bottom: 0,
-              overflow: "hidden",
-            }}
-          >
-            {video(
-              true,
-              landscape ? `${crop}% 65%` : `50% ${kind === "love" ? 70 : 90}%`,
-              landscape ? 1.26 * motion : motion,
-            )}
-          </div>
-          <div
-            style={{
-              position: "absolute",
-              left: 64,
-              right: 64,
-              top: 865,
-              height: 3,
-              background: "#FFFFFF30",
-            }}
-          />
-          <div
-            style={{
-              position: "absolute",
-              left: 64,
-              top: 865,
-              width: interpolate(frame, [0, durationInFrames], [60, 952]),
-              height: 3,
-              background: "#FFE34D",
-            }}
-          />
-          <div
-            style={{
-              position: "absolute",
-              left: 64,
-              right: 64,
-              top: 1092,
-              height: 3,
-              background: "#FFFFFF30",
+              height: 4,
+              backgroundColor: "#FFFFFFB0",
             }}
           />
         </>

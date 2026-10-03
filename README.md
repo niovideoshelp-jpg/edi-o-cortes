@@ -1,6 +1,6 @@
-# HardScope — três cortes em Remotion (V2)
+# HardScope — três cortes em Remotion (V3)
 
-Projeto editável com três vídeos independentes em 1080 × 1920, 30 fps, MP4 H.264/AAC. Legendas em inglês, brancas com contorno escuro e destaque amarelo sincronizado. Tela dupla com enquadramentos sincronizados da mesma cena, fonte Barlow Condensed ExtraBold e animação discreta por palavra. A carta de Unpacked e a revelação final de Love & Justice ocupam a tela inteira para preservar os detalhes.
+Projeto editável com três vídeos independentes em 1080 × 1920, 30 fps, MP4 H.264/AAC. Legendas em inglês com Barlow Condensed ExtraBold, contorno escuro e amarelo nas palavras de ênfase. A V3 alterna tela inteira com breves divisões que isolam participantes diferentes presentes no mesmo quadro original. Cada painel usa o mesmo tempo de origem. Uma única faixa de áudio acompanha as imagens; não há reações deslocadas, imagens congeladas ou duplicação da mesma pessoa como assunto dos dois painéis. Love & Justice permanece em tela inteira. Sem faixa preta central ou barras de progresso.
 
 | Composição     |  Duração | Trechos do trailer original                                   |
 | -------------- | -------: | ------------------------------------------------------------- |
@@ -20,7 +20,7 @@ npm ci
 npm run dev -- --no-open
 ```
 
-Edite `src/Root.tsx` para ajustar sequências e posições; `src/Cut.tsx` controla enquadramento, zoom e estilo das legendas; `src/captions.json` contém palavras e tempos.
+Edite `src/Root.tsx` para ajustar sequências; `src/editorial.ts` define os intervalos de tela dupla, recortes independentes em pixels da fonte e posições das legendas. `src/Cut.tsx` aplica os recortes sem esticar a imagem e mantém o áudio em uma camada separada. `src/captions.json` contém palavras e tempos. Os intervalos usam frames a 30 fps, com início incluso e fim exclusivo.
 
 ## Exportar
 
