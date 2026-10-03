@@ -1,0 +1,730 @@
+{
+  "r3born": [
+    {
+      "words": [
+        {
+          "text": " Nehaan",
+          "startMs": 170,
+          "endMs": 690,
+          "timestampMs": null,
+          "confidence": 0.4669
+        },
+        {
+          "text": " was",
+          "startMs": 690,
+          "endMs": 810,
+          "timestampMs": null,
+          "confidence": 0.5462
+        },
+        {
+          "text": " more",
+          "startMs": 810,
+          "endMs": 1090,
+          "timestampMs": null,
+          "confidence": 0.9779
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " like",
+          "startMs": 1090,
+          "endMs": 1270,
+          "timestampMs": null,
+          "confidence": 0.9919
+        },
+        {
+          "text": " a",
+          "startMs": 1270,
+          "endMs": 1430,
+          "timestampMs": null,
+          "confidence": 0.9465
+        },
+        {
+          "text": " god",
+          "startMs": 1430,
+          "endMs": 1770,
+          "timestampMs": null,
+          "confidence": 0.5448
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " than",
+          "startMs": 1770,
+          "endMs": 2270,
+          "timestampMs": null,
+          "confidence": 0.9332
+        },
+        {
+          "text": " a",
+          "startMs": 2270,
+          "endMs": 2410,
+          "timestampMs": null,
+          "confidence": 0.9942
+        },
+        {
+          "text": " man.",
+          "startMs": 2410,
+          "endMs": 2710,
+          "timestampMs": null,
+          "confidence": 0.9951
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " He",
+          "startMs": 3190,
+          "endMs": 3230,
+          "timestampMs": null,
+          "confidence": 0.2843
+        },
+        {
+          "text": " was",
+          "startMs": 3230,
+          "endMs": 3370,
+          "timestampMs": null,
+          "confidence": 0.995
+        },
+        {
+          "text": " the",
+          "startMs": 3370,
+          "endMs": 3470,
+          "timestampMs": null,
+          "confidence": 0.9916
+        },
+        {
+          "text": " best",
+          "startMs": 3470,
+          "endMs": 3730,
+          "timestampMs": null,
+          "confidence": 0.9964
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " ever",
+          "startMs": 3730,
+          "endMs": 3970,
+          "timestampMs": null,
+          "confidence": 0.9536
+        },
+        {
+          "text": " to",
+          "startMs": 3970,
+          "endMs": 4090,
+          "timestampMs": null,
+          "confidence": 0.9691
+        },
+        {
+          "text": " pick",
+          "startMs": 4090,
+          "endMs": 4290,
+          "timestampMs": null,
+          "confidence": 0.9668
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " up",
+          "startMs": 4290,
+          "endMs": 4430,
+          "timestampMs": null,
+          "confidence": 0.9852
+        },
+        {
+          "text": " a",
+          "startMs": 4430,
+          "endMs": 4470,
+          "timestampMs": null,
+          "confidence": 0.7797
+        },
+        {
+          "text": " weight,",
+          "startMs": 4470,
+          "endMs": 4670,
+          "timestampMs": null,
+          "confidence": 0.9494
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " a",
+          "startMs": 4890,
+          "endMs": 5010,
+          "timestampMs": null,
+          "confidence": 0.8242
+        },
+        {
+          "text": " real",
+          "startMs": 5010,
+          "endMs": 5230,
+          "timestampMs": null,
+          "confidence": 0.9912
+        },
+        {
+          "text": " physical",
+          "startMs": 5230,
+          "endMs": 5650,
+          "timestampMs": null,
+          "confidence": 0.9832
+        },
+        {
+          "text": " specimen.",
+          "startMs": 5650,
+          "endMs": 6210,
+          "timestampMs": null,
+          "confidence": 0.9957
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " He",
+          "startMs": 6890,
+          "endMs": 7050,
+          "timestampMs": null,
+          "confidence": 0.9805
+        },
+        {
+          "text": " once",
+          "startMs": 7050,
+          "endMs": 7210,
+          "timestampMs": null,
+          "confidence": 0.9813
+        },
+        {
+          "text": " pressed",
+          "startMs": 7210,
+          "endMs": 7650,
+          "timestampMs": null,
+          "confidence": 0.9885
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " over",
+          "startMs": 7650,
+          "endMs": 8150,
+          "timestampMs": null,
+          "confidence": 0.9889
+        },
+        {
+          "text": " 700",
+          "startMs": 8150,
+          "endMs": 8870,
+          "timestampMs": null,
+          "confidence": 0.953
+        },
+        {
+          "text": " pounds.",
+          "startMs": 8870,
+          "endMs": 9690,
+          "timestampMs": null,
+          "confidence": 0.3609
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " One",
+          "startMs": 11450,
+          "endMs": 11890,
+          "timestampMs": null,
+          "confidence": 0.9274
+        },
+        {
+          "text": " handed.",
+          "startMs": 11890,
+          "endMs": 12270,
+          "timestampMs": null,
+          "confidence": 0.7895
+        }
+      ]
+    }
+  ],
+  "unpacked": [
+    {
+      "words": [
+        {
+          "text": " There's",
+          "startMs": 160,
+          "endMs": 680,
+          "timestampMs": null,
+          "confidence": 0.7541
+        },
+        {
+          "text": " no",
+          "startMs": 680,
+          "endMs": 980,
+          "timestampMs": null,
+          "confidence": 0.9413
+        },
+        {
+          "text": " way.",
+          "startMs": 980,
+          "endMs": 1480,
+          "timestampMs": null,
+          "confidence": 0.9896
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " No",
+          "startMs": 1700,
+          "endMs": 1900,
+          "timestampMs": null,
+          "confidence": 0.8076
+        },
+        {
+          "text": " way.",
+          "startMs": 1900,
+          "endMs": 2160,
+          "timestampMs": null,
+          "confidence": 0.9981
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " Let's",
+          "startMs": 2420,
+          "endMs": 2900,
+          "timestampMs": null,
+          "confidence": 0.9001
+        },
+        {
+          "text": " go.",
+          "startMs": 2900,
+          "endMs": 3160,
+          "timestampMs": null,
+          "confidence": 0.9835
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " One",
+          "startMs": 3600,
+          "endMs": 3700,
+          "timestampMs": null,
+          "confidence": 0.9464
+        },
+        {
+          "text": " card",
+          "startMs": 3700,
+          "endMs": 4020,
+          "timestampMs": null,
+          "confidence": 0.9023
+        },
+        {
+          "text": " in",
+          "startMs": 4020,
+          "endMs": 4200,
+          "timestampMs": null,
+          "confidence": 0.9948
+        },
+        {
+          "text": " here",
+          "startMs": 4200,
+          "endMs": 4440,
+          "timestampMs": null,
+          "confidence": 0.9985
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " to",
+          "startMs": 4440,
+          "endMs": 4660,
+          "timestampMs": null,
+          "confidence": 0.4228
+        },
+        {
+          "text": " change",
+          "startMs": 4660,
+          "endMs": 4980,
+          "timestampMs": null,
+          "confidence": 0.994
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " the",
+          "startMs": 4980,
+          "endMs": 5360,
+          "timestampMs": null,
+          "confidence": 0.9967
+        },
+        {
+          "text": " entire",
+          "startMs": 5360,
+          "endMs": 5780,
+          "timestampMs": null,
+          "confidence": 0.9983
+        },
+        {
+          "text": " day.",
+          "startMs": 5780,
+          "endMs": 6100,
+          "timestampMs": null,
+          "confidence": 0.999
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " Dude,",
+          "startMs": 6400,
+          "endMs": 6580,
+          "timestampMs": null,
+          "confidence": 0.8042
+        },
+        {
+          "text": " let's",
+          "startMs": 6800,
+          "endMs": 7000,
+          "timestampMs": null,
+          "confidence": 0.9847
+        },
+        {
+          "text": " go.",
+          "startMs": 7000,
+          "endMs": 7240,
+          "timestampMs": null,
+          "confidence": 0.9975
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " Amazing.",
+          "startMs": 7580,
+          "endMs": 7840,
+          "timestampMs": null,
+          "confidence": 0.4898
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " Oh",
+          "startMs": 8640,
+          "endMs": 8960,
+          "timestampMs": null,
+          "confidence": 0.9016
+        },
+        {
+          "text": " my",
+          "startMs": 8960,
+          "endMs": 9360,
+          "timestampMs": null,
+          "confidence": 0.8561
+        },
+        {
+          "text": " God.",
+          "startMs": 9360,
+          "endMs": 9560,
+          "timestampMs": null,
+          "confidence": 0.5019
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " Oh",
+          "startMs": 9840,
+          "endMs": 9940,
+          "timestampMs": null,
+          "confidence": 0.9158
+        },
+        {
+          "text": " my",
+          "startMs": 9940,
+          "endMs": 10520,
+          "timestampMs": null,
+          "confidence": 0.9571
+        },
+        {
+          "text": " God.",
+          "startMs": 10520,
+          "endMs": 10680,
+          "timestampMs": null,
+          "confidence": 0.9593
+        }
+      ]
+    }
+  ],
+  "love": [
+    {
+      "words": [
+        {
+          "text": " Every",
+          "startMs": 160,
+          "endMs": 280,
+          "timestampMs": null,
+          "confidence": 0.9956
+        },
+        {
+          "text": " relationship",
+          "startMs": 280,
+          "endMs": 880,
+          "timestampMs": null,
+          "confidence": 0.9962
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " has",
+          "startMs": 880,
+          "endMs": 1340,
+          "timestampMs": null,
+          "confidence": 0.9991
+        },
+        {
+          "text": " two",
+          "startMs": 1340,
+          "endMs": 1620,
+          "timestampMs": null,
+          "confidence": 0.9899
+        },
+        {
+          "text": " sides.",
+          "startMs": 1620,
+          "endMs": 1980,
+          "timestampMs": null,
+          "confidence": 0.9987
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " Every",
+          "startMs": 2680,
+          "endMs": 2840,
+          "timestampMs": null,
+          "confidence": 0.9962
+        },
+        {
+          "text": " side",
+          "startMs": 2840,
+          "endMs": 3260,
+          "timestampMs": null,
+          "confidence": 0.9976
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " has",
+          "startMs": 3260,
+          "endMs": 3600,
+          "timestampMs": null,
+          "confidence": 0.9984
+        },
+        {
+          "text": " a",
+          "startMs": 3600,
+          "endMs": 3760,
+          "timestampMs": null,
+          "confidence": 0.9984
+        },
+        {
+          "text": " story.",
+          "startMs": 3760,
+          "endMs": 4220,
+          "timestampMs": null,
+          "confidence": 0.9994
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " And",
+          "startMs": 4800,
+          "endMs": 4840,
+          "timestampMs": null,
+          "confidence": 0.9936
+        },
+        {
+          "text": " when",
+          "startMs": 4840,
+          "endMs": 4960,
+          "timestampMs": null,
+          "confidence": 0.9856
+        },
+        {
+          "text": " the",
+          "startMs": 4960,
+          "endMs": 5100,
+          "timestampMs": null,
+          "confidence": 0.9933
+        },
+        {
+          "text": " truth",
+          "startMs": 5100,
+          "endMs": 5360,
+          "timestampMs": null,
+          "confidence": 0.9974
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " gets",
+          "startMs": 5360,
+          "endMs": 5640,
+          "timestampMs": null,
+          "confidence": 0.9982
+        },
+        {
+          "text": " messy,",
+          "startMs": 5640,
+          "endMs": 5960,
+          "timestampMs": null,
+          "confidence": 0.9984
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " there's",
+          "startMs": 6540,
+          "endMs": 6680,
+          "timestampMs": null,
+          "confidence": 0.9899
+        },
+        {
+          "text": " only",
+          "startMs": 6680,
+          "endMs": 6900,
+          "timestampMs": null,
+          "confidence": 0.9991
+        },
+        {
+          "text": " one",
+          "startMs": 6900,
+          "endMs": 7180,
+          "timestampMs": null,
+          "confidence": 0.9977
+        },
+        {
+          "text": " man",
+          "startMs": 7180,
+          "endMs": 7720,
+          "timestampMs": null,
+          "confidence": 0.9973
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " qualified",
+          "startMs": 7720,
+          "endMs": 8100,
+          "timestampMs": null,
+          "confidence": 0.9453
+        },
+        {
+          "text": " to",
+          "startMs": 8100,
+          "endMs": 8740,
+          "timestampMs": null,
+          "confidence": 0.9993
+        },
+        {
+          "text": " settle",
+          "startMs": 8740,
+          "endMs": 9060,
+          "timestampMs": null,
+          "confidence": 0.9956
+        },
+        {
+          "text": " it.",
+          "startMs": 9060,
+          "endMs": 9300,
+          "timestampMs": null,
+          "confidence": 0.9939
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " This",
+          "startMs": 9540,
+          "endMs": 9800,
+          "timestampMs": null,
+          "confidence": 0.9091
+        },
+        {
+          "text": " is",
+          "startMs": 9800,
+          "endMs": 10220,
+          "timestampMs": null,
+          "confidence": 0.9966
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "text": " love",
+          "startMs": 10220,
+          "endMs": 10440,
+          "timestampMs": null,
+          "confidence": 0.8356
+        },
+        {
+          "text": " and",
+          "startMs": 10440,
+          "endMs": 10560,
+          "timestampMs": null,
+          "confidence": 0.9124
+        },
+        {
+          "text": " justice.",
+          "startMs": 10560,
+          "endMs": 10940,
+          "timestampMs": null,
+          "confidence": 0.9987
+        }
+      ]
+    }
+  ]
+}
