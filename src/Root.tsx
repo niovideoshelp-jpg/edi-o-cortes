@@ -13,7 +13,7 @@ const UnpackedCaptions = () => {
   return (
     <CenterCaptions
       pages={captions.unpacked}
-      top={frame >= 126 && frame <= 180 ? 1510 : 1100}
+      top={frame >= 294 ? 1560 : frame >= 126 && frame <= 180 ? 1510 : 1100}
     />
   );
 };
@@ -87,3 +87,4 @@ export const RemotionRoot = () => (
     />
   </>
 );
+
